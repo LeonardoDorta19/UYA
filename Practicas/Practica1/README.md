@@ -34,7 +34,7 @@ es-419; es
 
 ### Alguna línea de código JavaScript
 
-```
+``` javascript
 if (!location.href.includes('operabrowserjs=no')) {
   (function(document) {
     const {href, pathname, hostname} = location;
@@ -52,7 +52,7 @@ if (!location.href.includes('operabrowserjs=no')) {
 ```
 ## Alguna línea de código CSS que se aplique
 
-```
+```css
 .gap a,.gap a:hover,.gap a:link,.gap a:visited
 {text-decoration:none!important;color:#afafaf} 
 img.redes
@@ -64,7 +64,7 @@ img.redes
 
 ## Alguna línea de código HTML que se aplique.
 
-```
+```html
 <h2><a href="http://www.gobiernodecanarias.org/istac/api/indicators/v1.0/#" alt="API de indicadores">API de indicadores v1.0</a></h2>
 ```
 
@@ -107,7 +107,7 @@ en-US,en;q=0.5
 
 ### Alguna línea de código JavaScript
 
-```
+```JavaScript
 Hay tres peticiones aceptadas en JavaScript
 
  Modal.prototype = {
@@ -152,7 +152,7 @@ Hay tres peticiones aceptadas en JavaScript
 
 Hay dos peticiones aceptadas en CSS
 
-```
+```css
 .header {
 	padding-bottom: 20px;
 	border-bottom: 1px solid #e5e5e5;
@@ -164,7 +164,7 @@ Hay dos peticiones aceptadas en CSS
 
 Hay 1 peticiones aceptadas en HTML, y dos que no se aplica.
 
-```
+```html
 
 <div class="col-lg-4 pull-right" id="bloque-info-pie" style="text-align: right">
     <a href="http://www.gobiernodecanarias.org/es/avisolegal.html">Aviso legal</a>
