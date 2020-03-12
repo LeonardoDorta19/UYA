@@ -1,1 +1,323 @@
+# Introduccion a HTML
 
+## Este README es solo para tener una idea de como se ve la pagina,README es un Markdown, no un HTML. Para ver el html, descargue los archivos y haga click en el index.html
+
+
+<header>
+
+# Banco de tiempo
+
+[Inicio de sesión](#login)  
+[Crear cuenta](#register)  
+[Información](#info)
+
+## _La mejor opción para ahorrar tiempo en tus días ocupados._
+
+</header>
+
+### Inicio de sesión
+
+<form action="#iniciosesion" method="get"><label>Correo electrónico:</label> <input type="text" name="correo" alt="El correo del usuario.">  
+<label>Contraseña:            </label> <input type="password" name="clave" alt="La contraseña para iniciar sesion.">  
+
+Olvidaste la contraseña ? [pincha aquí](#olvidoclave)
+
+<input type="submit" value="Registrar"></form>
+
+### Registro
+
+A continuación se muestra una serie de campos que debe rellenar para completar su registro. Los campos que contengan el símbolo "*" son obligatorios.
+
+<form action="#registrar" method="post"><label>(*)Nombre:</label>  
+<input type="text" name="nombre" alt="El nombre del usuario.">  
+<label>(*)Apellido:</label>  
+<input type="text" name="apellido" alt="El apellido del usuario.">  
+<label>(*)Genero:</label>  
+<label>Hombre</label> <input type="radio" name="ghombre" alt="Hombre."> <label>Mujer</label> <input type="radio" name="gmujer" alt="Mujer.">  
+<label>(*)Ciudad:</label>  
+<select><option>Santa Cruz</option> <option>La laguna</option> <option>La Orotava</option> <option>Los realejos</option> <option>Tacoronte</option> <option>Icod de los vinos</option> <option>Puerto de la Cruz</option> <option>Adeje</option></select>  
+<label>(*)Correo electrónico:</label>  
+<input type="text" name="correo" alt="El correo del usuario.">  
+<label>(*)Contraseña:</label>  
+<input type="password" name="clave" alt="La contraseña para iniciar sesion.">  
+<label>(*)Repite la contraseña:</label>  
+<input type="password" name="re-clave" alt="Comprovacion de la contraseña.">  
+<label>En que cirscunstáncias sueles necesitar ayuda:</label>
+
+<table>
+
+<tbody>
+
+<tr>
+
+<td>Tutorías universitarias <input type="checkbox" name="tutoríasuniversitarias" alt="op1."></td>
+
+<td>Transporte             <input type="checkbox" name="transporte" alt="op2."></td>
+
+<td>Tareas del hogar                       <input type="checkbox" name="tareashogar" alt="op3."></td>
+
+</tr>
+
+<tr>
+
+<td>Actividades de trabajo <input type="checkbox" name="actividadestrabajo" alt="op4."></td>
+
+<td>Cuidado de niños  <input type="checkbox" name="cuidadoniños" alt="op5."></td>
+
+<td>Cuidado de personas mayores <input type="checkbox" name="cuidadomayores" alt="op6."></td>
+
+</tr>
+
+<tr>
+
+<td>Compras                      <input type="checkbox" name="compras" alt="op7."></td>
+
+<td>Planificar eventos <input type="checkbox" name="planificareventos" alt="op8."></td>
+
+<td>Ejercicios fisicos                     <input type="checkbox" name="ejerciciosfisicos" alt="op9."></td>
+
+</tr>
+
+<tr>
+
+<td>Tutorías escolares       <input type="checkbox" name="tutoríasescolares" alt="op10."></td>
+
+<td>Cocina                  <input type="checkbox" name="cocina" alt="op."></td>
+
+<td>Limpieza                                 <input type="checkbox" name="limpieza" alt="op."></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<label>Si necesitas agregar información adicional sobre tus necesidades puedes hacerlo aquí:</label><textarea></textarea>  
+
+<input type="submit" value="Iniciar sesion"></form>
+
+### Información
+
+Banco de tiempo esta pensado para las personas que necesitan una mano extra en su día a día para llevar a cabo diversas tareas y ahorrar tiempo.
+
+#### Compras con favores, pagas con favores
+
+![apartado 1](ayuda.png)
+
+La plataforma es completamente gratuita, sin embargo, para poder contratar un ayudante deberás tener la suficiente cantidad de Helper Coins que la tarea requeira, los Helper Coins se consiguen ayudando a otras personas y su cantidad dependerá del tiempo y la dificultad que inviertas en los favores de los demás usuarios.
+
+#### Si ayudas, resaltas !
+
+![apartado 2](reputacion.jpg)
+
+Cada vez que completes una tarea, estas se iran acumulando en un marcador que afectara tu nivel como usuario, además resivirás puntuaciones y referencias de las personas a quien ayudaste, de esta forma la aplicación no tardara en recomendarte para cumplir mas actividades.
+
+#### La ayuda te ayuda
+
+![apartado 3](rewards.png)
+
+Mientras subas de nivel como usuario o invites a mas personas a unirse al banco de tiempo, podrás recibir recompenzas extras:
+
+*   Descuento al comprar favores.
+*   Helper coins.
+*   Cupones para tareas especificas gratis.
+
+<footer>
+
+* * *
+
+##### Introducción a HTML
+
+###### Universidad de la laguna
+
+###### Elvis Nogueiras - Leonardo Dorta - Daniel Arbelo
+
+</footer>
+
+## Codigo HTML 
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Banco del tiempo</title>
+	<meta name="author" content="Elvis, Leo, Daniel">
+	<meta name="description" content="La mejor opcion para ahoora tiempo">
+	<link rel="icon" type="image/x-icon" href=""/>
+</head>
+
+<body>
+    <header>
+
+<!--    navegacion-->
+    <h1>Banco de tiempo</h1>
+    <a href="#login" name="login">Inicio de sesi&oacuten</a>   
+    <br>
+    <a href="#register" name="register">Crear cuenta</a>  
+    <br>
+    <a href="#info" name="informacion">Informaci&oacuten</a>          <!--    faltan rel rev -->    
+<!--    fin navegacion-->
+   
+    <h2><em>La mejor opción para ahorrar tiempo en tus días ocupados.</em></h2>
+        
+    </header>
+    
+<!--    formulario inisio sesion-->
+    <h3>Inicio de sesi&oacuten</h3>
+    <form action="#iniciosesion" method="get">
+        
+        <label>Correo electrónico: </label>
+        <input type="text" name="correo" alt="El correo del usuario.">
+        <br>
+        
+        <label>Contrase&ntildea: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+        <input type="password" name="clave" alt="La contraseña para iniciar sesion.">
+        <br>
+        
+        <p>Olvidaste la contrase&ntildea ? <a href="#olvidoclave" name="recuperarcontraseña">pincha aquí</a></p>
+        <br>
+        
+        <input type="submit" value="Registrar">
+        
+    </form>
+<!--    fin formulario inisio sesion-->
+
+<!--    formulario registro--> 
+    <h3>Registro</h3>
+    <p>
+        A continuaci&oacuten se muestra una serie de campos que debe rellenar para completar su registro.
+        Los campos que contengan el símbolo &quot*&quot son obligatorios.
+    </p>
+
+    <form action="#registrar" method="post">
+        
+        <label>(*)Nombre:</label>
+        <br>
+        <input type="text" name="nombre" alt="El nombre del usuario.">
+        <br>
+        
+        <label>(*)Apellido:</label>
+        <br>
+        <input type="text" name="apellido" alt="El apellido del usuario.">
+        <br>
+        
+        <label>(*)Genero:</label>
+        <br>
+        <label>Hombre</label>
+        <input type="radio" name="ghombre" alt="Hombre.">
+        <label>Mujer</label>
+        <input type="radio" name="gmujer" alt="Mujer.">
+        <br>
+        
+        <label>(*)Ciudad:</label>
+        <br>
+        <select>
+            <option>Santa Cruz</option>
+            <option>La laguna</option>
+            <option>La Orotava</option>
+            <option>Los realejos</option>
+            <option>Tacoronte</option>
+            <option>Icod de los vinos</option>
+            <option>Puerto de la Cruz</option>
+            <option>Adeje</option>
+        </select>
+        <br>
+        
+        
+        <label>(*)Correo electrónico:</label>
+        <br>
+        <input type="text" name="correo" alt="El correo del usuario.">
+        <br>
+        
+        <label>(*)Contrase&ntildea:</label>
+        <br>
+        <input type="password" name="clave" alt="La contraseña para iniciar sesion.">
+        <br>
+        
+        <label>(*)Repite la contrase&ntildea:</label>
+        <br>
+        <input type="password" name="re-clave" alt="Comprovacion de la contraseña.">
+        <br>
+        
+        <label>En que cirscunstáncias sueles necesitar ayuda:</label>
+        
+        <table>
+        <tr>
+            <td>Tutorías universitarias <input type="checkbox" name="tutoríasuniversitarias" alt="op1."> </td>
+            <td>Transporte &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="transporte" alt="op2."> </td>
+            <td>Tareas del hogar &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="tareashogar" alt="op3."></td>
+        </tr>
+        <tr>
+            <td>Actividades de trabajo <input type="checkbox" name="actividadestrabajo" alt="op4."></td>
+            <td>Cuidado de niños &nbsp<input type="checkbox" name="cuidadoniños" alt="op5."></td>
+            <td>Cuidado de personas mayores <input type="checkbox" name="cuidadomayores" alt="op6."></td>
+        </tr>
+        <tr>
+            <td>Compras &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="compras" alt="op7."></td>
+            <td>Planificar eventos <input type="checkbox" name="planificareventos" alt="op8."></td>
+            <td>Ejercicios fisicos &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="ejerciciosfisicos" alt="op9."></td>
+        </tr>
+        <tr>
+            <td>Tutorías escolares &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="tutoríasescolares" alt="op10."></td>
+            <td>Cocina &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="cocina" alt="op."></td>
+            <td>Limpieza &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="limpieza" alt="op.">
+            </td>
+        </tr>
+        </table>
+        
+        <label>Si necesitas agregar informaci&oacuten adicional sobre tus necesidades puedes hacerlo aquí:</label>
+        <textarea></textarea>
+        <br>
+        
+        <br>
+        <input type="submit" value="Iniciar sesion">
+        
+    </form>
+<!--    fin formulario registro-->
+    
+<!--    informacion -->
+    <h3>Informaci&oacuten</h3>
+    <p>
+        Banco de tiempo esta pensado para las personas que necesitan una mano extra en su día a día para 
+        llevar a cabo diversas tareas y ahorrar tiempo.
+    </p>
+    <h4>Compras con favores, pagas con favores</h4>
+    <img width="100" height="100" src="ayuda.png" alt="apartado 1">
+    <p>
+        La plataforma es completamente gratuita, sin embargo, para poder contratar un ayudante deberás tener 
+        la suficiente cantidad de Helper Coins que la tarea requeira, los Helper Coins se consiguen ayudando
+        a otras personas y su cantidad dependerá del tiempo y la dificultad que inviertas en los favores de 
+        los demás usuarios.
+    </p>
+    <h4>Si ayudas, resaltas !</h4>
+    <img width="100" height="100" src="reputacion.jpg" alt="apartado 2">
+    <p>
+        Cada vez que completes una tarea, estas se iran acumulando en un marcador que afectara tu nivel como usuario, además resivirás puntuaciones y referencias de las personas a quien ayudaste, de esta forma la aplicación no tardara en recomendarte para cumplir mas actividades. 
+    </p>
+    
+    <h4>La ayuda te ayuda</h4>
+    <img width="100" height="100" src="rewards.png" alt="apartado 3">
+    <p>
+        Mientras subas de nivel como usuario o invites a mas personas a unirse al banco de tiempo, podrás recibir recompenzas extras:
+    </p>
+    <ul>
+        <li>Descuento al comprar favores.</li> 
+        <li>Helper coins.</li>
+        <li>Cupones para tareas especificas gratis.</li>
+    </ul>
+<!--    fin informacion-->
+    
+    
+    <footer>
+    <hr>
+        <h5>Introducción a HTML</h5>
+        <h6>Universidad de la laguna</h6>
+        <h6>Elvis Nogueiras - Leonardo Dorta - Daniel Arbelo</h6>
+    </footer>
+    
+</body>
+
+</html>
+```
