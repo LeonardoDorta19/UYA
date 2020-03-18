@@ -1,0 +1,137 @@
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-color: black;
+    width: 770px;
+    position: relative;
+    margin-left: 5%; 
+    position: relative;
+}
+
+a{
+  color: #03B2F3;
+}
+
+a:hover{
+  color: #E83117;
+}
+
+a:visited{
+  color: #1C00BD;
+}
+
+table a{
+  color: #00FF1A;
+}
+
+p{
+  margin-top: 0.5em
+}
+
+.texto_secundario {
+    position: relative;
+    top: -20px;
+    border-style: solid;
+    width: 430px;
+}
+
+
+.texto_secundario h2{
+  height: 100px;
+  background-image: url(img/cabecera.jpg);
+  background-size: contain;
+  text-align: center;
+}
+
+.texto_secundario .menu *{
+  padding: 0.3em;
+  margin-bottom: 0.7em;
+}
+
+.nav {
+    width: 100%;
+    margin: auto;
+    border-style: solid;
+    position: relative;
+    left: 60%;
+    top: 30px;
+    background: lightgrey;
+}
+
+.nav li:hover{ /*no si los elementos seran li*/
+  background-color: grey;
+}
+
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+  display: block;
+  padding: 8px;
+  /*background-color: */
+}
+
+
+.texto_secundario ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pie_pagina {
+    border-style: solid;
+    
+
+}
+
+main{
+  position: relative;
+}   
+
+.contenido_principal {
+  width: 60%;
+  position: relative;
+  border-style: solid;
+  left: 450px;
+  top: -580px;
+}
+
+.enlaces {
+  width: 40%;
+  margin-top: -111px;
+  border-style: solid;
+  position: relative;
+  left: 930px;
+  top: -1015px;
+  padding-bottom: 340px;
+}
+
+footer{
+  width: 163%;
+  display: block;
+  position: relative;
+  margin-top: -990px;
+}
+
+
+
+.main-images img{
+    width: 50%;
+    display: inline-block;
+    padding-left: 100px;
+}
+
+/*------------------------------------*/
+
+
+
