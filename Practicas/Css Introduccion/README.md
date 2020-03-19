@@ -1,6 +1,6 @@
 # Introducción a CSS
 
-## resultado
+## Resultado
 ![img](img/Screenshot.png)
 
 ## código css
