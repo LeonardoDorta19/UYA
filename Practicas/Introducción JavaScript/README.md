@@ -30,7 +30,7 @@
 |                 | document.replaceChild(new, old)       | Reemplaza un nodo hijo del elemento especificado por otro.                                                                                                                                           |
 |                 | document.write(text)                  | Escribe expresiones HTML o código JavaScript en un documento.                                                                                                                                        |
 
-### 2. Realiza un esquema del árbol DOM que genera el [código HTML en el fichero enlazado](https://campusvirtual.ull.es/1920/pluginfile.php/258285/mod_assign/intro/dom.html
+### 2. Realiza un esquema del árbol DOM que genera el [código HTML en el fichero enlazado](https://campusvirtual.ull.es/1920/pluginfile.php/258285/mod_assign/intro/dom.html)
 
 ### 3. Define una función en javascript en la que se pueda calcular el cambio entre diferentes monedas (al menos 3 diferentes).
 
