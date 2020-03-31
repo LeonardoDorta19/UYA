@@ -2,6 +2,13 @@
 
 1. Crea una tabla describiendo el propósito de las funciones javascript incluidas en la última trasparencia del documento de introducción a javascript
 
+
+|Tipo de Funcion| Función       | Descripción           
+|---------------| ------------- |:-------------:
+|    dasd        | col 3 is      | right-aligned 
+                  |centered      
+| zebra stripes| are neat      
+
 2. Realiza un esquema del árbol DOM que genera el [código HTML en el fichero enlazado](https://campusvirtual.ull.es/1920/pluginfile.php/258285/mod_assign/intro/dom.html
 
 3. Define una función en javascript en la que se pueda calcular el cambio entre diferentes monedas (al menos 3 diferentes).
