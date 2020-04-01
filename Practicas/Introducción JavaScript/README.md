@@ -34,6 +34,51 @@
 
 ### 3. Define una función en javascript en la que se pueda calcular el cambio entre diferentes monedas (al menos 3 diferentes).
 
+```javascript
+ function moneda() {
+            this.nombre
+            this.tipoDeCambio
+
+            this.convertir = function(monto) {
+                resultado = monto * this.tipoDeCambio
+                document.getElementById('resultado_cambio').innerHTML = monto + ' Euros son : ' + resultado + ' ' + this.nombre
+               
+            }
+        }
+
+        var yen = new moneda()
+        yen.nombre = "Yenes"
+        yen.tipoDeCambio = 117.20
+
+        var dolares = new moneda()
+        dolares.nombre = "Dolares"
+        dolares.tipoDeCambio = 1.09
+
+        var libras = new moneda()
+        libras.nombre = "Libras"
+        libras.tipoDeCambio = 0.88
+
+        function convertirMoneda(tipo_moneda) {
+            var monto_input = document.getElementById('cantidad').value
+
+            if(tipo_moneda == "yenes"){
+                yen.convertir(monto_input)
+            } else if(tipo_moneda == "dolares"){
+                dolares.convertir(monto_input)
+            } else if(tipo_moneda == "libras"){
+                libras.convertir(monto_input)
+            }
+
+        }
+```
+
+Para su ejecucion, hacemos click en el siguiente enlace en rojo
+
+![enlaceEnRojo](screenshots/enlaceEnRojo.png)
+
+![cambioDeMoneda](screenshots/cambioDeMoneda.png)
+
+
 ### 4. Define una función javascript que calcule la edad de los usuarios, y su sueldo. Debes considerar un json de ejmplo con los datos, en el que se registra para cada usuario su dni, año de nacimiento, fecha de ingreso en la empresa, plus de productividad en %, plus de antigüedad bruto (0,1% por cada tres años trabajado) y el sueldo base. (El json debe estar en el propio código, inicializando una variable, explica por qué se te exige este requisito).
 
 ```javascript
