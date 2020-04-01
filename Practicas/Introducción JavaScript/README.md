@@ -59,4 +59,4 @@ function report(){
 ```
 Para ejecutarla, es necesario abrir la consola en el navegador y ejecutar la función `report()`
 
-![codigoEnEjecucion](screenshots/reportFunction)
+![codigoEnEjecucion](screenshots/reportFunction.png)
