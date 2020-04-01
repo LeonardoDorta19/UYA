@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Convertidor de moneda</h1>
+
+    <div class="conversor">
+        <label>Monto :</label>
+        <input id="cantidad" type="number" placeholder="Monto en euros">
+        <button onclick="convertirMoneda('dolares')">Convertir a Dólares</button>
+        <button onclick="convertirMoneda('libras')">Convertir a Libras Esterlinas</button>
+        <button onclick="convertirMoneda('yenes')">Convertir a Yenes</button>
+    </div>
+
+    <div id="resultado_cambio">
+
+    </div>
+
+    <script>
+
+        function moneda() {
+            this.nombre
+            this.tipoDeCambio
+
+            this.convertir = function(monto) {
+                resultado = monto * this.tipoDeCambio
+                document.getElementById('resultado_cambio').innerHTML = monto + ' Euros son : ' + resultado + ' ' + this.nombre
+               
+            }
+        }
+
+        var yen = new moneda()
+        yen.nombre = "Yenes"
+        yen.tipoDeCambio = 117.20
+
+        var dolares = new moneda()
+        dolares.nombre = "Dolares"
+        dolares.tipoDeCambio = 1.09
+
+        var libras = new moneda()
+        libras.nombre = "Libras"
+        libras.tipoDeCambio = 0.88
+
+        function convertirMoneda(tipo_moneda) {
+            var monto_input = document.getElementById('cantidad').value
+
+            if(tipo_moneda == "yenes"){
+                yen.convertir(monto_input)
+            } else if(tipo_moneda == "dolares"){
+                dolares.convertir(monto_input)
+            } else if(tipo_moneda == "libras"){
+                libras.convertir(monto_input)
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
