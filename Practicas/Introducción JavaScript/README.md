@@ -37,3 +37,26 @@
 ### 4. Define una función javascript que calcule la edad de los usuarios, y su sueldo. Debes considerar un json de ejmplo con los datos, en el que se registra para cada usuario su dni, año de nacimiento, fecha de ingreso en la empresa, plus de productividad en %, plus de antigüedad bruto (0,1% por cada tres años trabajado) y el sueldo base. (El json debe estar en el propio código, inicializando una variable, explica por qué se te exige este requisito).
 
 ### 5. Crear un script que muestre un informe de la cantidad de párrafos, enlaces y encabezados en tu página de inicio.
+
+```javascript
+function report(){
+	var links = document.getElementsByTagName("a")
+	console.log("cantidad de links: " + links.length)
+	var paragraph = document.getElementsByTagName("p")
+	console.log("cantidad de parrafos: " + paragraph.length)
+
+
+	var typesOfHeaders = ["h1","h2","h3","h4","h5","h6","h7"]
+
+	typesOfHeadersLength = 0
+
+	for (i of typesOfHeaders){
+		typesOfHeadersLength += document.getElementsByTagName(i).length
+	}
+
+	console.log("cantidad de encabezados: " + typesOfHeadersLength)
+}
+```
+Para ejecutarla, es necesario abrir la consola en el navegador y ejecutar la función `report()`
+
+![codigoEnEjecucion](screenshots/reportFunction)
