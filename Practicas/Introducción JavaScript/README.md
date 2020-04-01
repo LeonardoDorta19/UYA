@@ -36,6 +36,34 @@
 
 ### 4. Define una función javascript que calcule la edad de los usuarios, y su sueldo. Debes considerar un json de ejmplo con los datos, en el que se registra para cada usuario su dni, año de nacimiento, fecha de ingreso en la empresa, plus de productividad en %, plus de antigüedad bruto (0,1% por cada tres años trabajado) y el sueldo base. (El json debe estar en el propio código, inicializando una variable, explica por qué se te exige este requisito).
 
+```javascript
+let companyUsers = 
+
+{
+	"dni": 54445454,
+	"bornYear": 1991,
+	"startDate": 2015,
+	"productivityPlus": 15,
+	"baseSalary": 1500,
+}
+
+
+
+
+function AgeAndSalary(companyUsers){
+
+	var date = new Date() 
+	var age =  parseInt(date.getFullYear()) - parseInt(companyUsers.bornYear)
+	var longevity = (parseInt(date.getFullYear()) - parseInt(companyUsers.startDate))
+	var totalSalary = companyUsers.baseSalary * (longevity + companyUsers.productivityPlus) 
+	alert("el usuario tienes" + age + " y su salario es de  " + totalSalary )
+}
+
+console.log(companyUsers)
+```
+
+![AgeAndSalary function](screenshots/AgeAndSalary.png)
+
 ### 5. Crear un script que muestre un informe de la cantidad de párrafos, enlaces y encabezados en tu página de inicio.
 
 ```javascript
