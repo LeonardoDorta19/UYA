@@ -16,7 +16,7 @@
 
 5. [Introducción a javascript](https://github.com/LeonardoDorta19/UYA/tree/master/Practicas/Introducci%C3%B3n%20JavaScript)
 
-6. [Introducción a Ajax]()
+6. [Introducción a Ajax](https://github.com/LeonardoDorta19/UYA/tree/master/Practicas/Introducci%C3%B3n%20a%20Ajax)
 
 ## Teoría
 
