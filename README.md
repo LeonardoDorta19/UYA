@@ -13,7 +13,10 @@
 3. [Introducción a CSS](https://github.com/LeonardoDorta19/UYA/tree/master/Practicas/Css%20Introduccion)
 
 4. [Introducción a Materialize](https://github.com/LeonardoDorta19/UYA/tree/master/Practicas/Introducci%C3%B3n%20a%20Materialize)
+
 5. [Introducción a javascript](https://github.com/LeonardoDorta19/UYA/tree/master/Practicas/Introducci%C3%B3n%20JavaScript)
+
+6. [Introducción a Ajax]()
 
 ## Teoría
 
