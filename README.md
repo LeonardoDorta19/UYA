@@ -22,4 +22,6 @@
 
 1. [Uso de la web por personas con disfuncionalidad](https://github.com/LeonardoDorta19/UYA/tree/master/Practicas/Uso%20de%20la%20web%20por%20personas%20con%20disfuncionalidad)
 
+2. [Legislación de Línea del Tiempo](https://github.com/LeonardoDorta19/UYA/tree/master/Practicas/Uso%20de%20la%20web%20por%20personas%20con%20disfuncionalidad)
+
 
