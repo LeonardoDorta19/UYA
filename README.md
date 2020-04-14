@@ -26,7 +26,6 @@
 
 3. [Criterios - Técnicas WCAG 2.1. Perceptible](https://github.com/LeonardoDorta19/UYA/blob/master/Practicas/T%C3%A9cnicas%20WCAG%202.1.%20Perceptible/README.md)
 
-4. [Pautas Accesibilidad WCAG 2.1 Criterio Operable]
-()
+4. [Pautas Accesibilidad WCAG 2.1 Criterio Operable](https://github.com/LeonardoDorta19/UYA/tree/master/Practicas/Pautas%20Accesibilidad%20WCAG%202.1%20Criterio%20Operable)
 
 
