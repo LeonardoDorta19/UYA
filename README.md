@@ -24,4 +24,6 @@
 
 2. [Legislación de Línea del Tiempo](https://github.com/LeonardoDorta19/UYA/tree/master/Practicas/Legislaci%C3%B3nL%C3%ADneaDelTiempo)
 
+3. [Criterios - Técnicas WCAG 2.1. Perceptible](https://github.com/LeonardoDorta19/UYA/blob/master/Practicas/T%C3%A9cnicas%20WCAG%202.1.%20Perceptible/README.md)
+
 
