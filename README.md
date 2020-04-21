@@ -28,4 +28,6 @@
 
 4. [Pautas Accesibilidad WCAG 2.1 Criterio Operable](https://github.com/LeonardoDorta19/UYA/tree/master/Practicas/Pautas%20Accesibilidad%20WCAG%202.1%20Criterio%20Operable)
 
+5. [Criterios A, AA de los principios Comprensible y Robusto](https://github.com/LeonardoDorta19/UYA/tree/master/Practicas/Criterios%20-%20T%C3%A9cnicas%20WCAG%202.1%20(II))
+
 
