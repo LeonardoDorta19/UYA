@@ -18,6 +18,9 @@
 
 6. [Introducción a Ajax](https://github.com/LeonardoDorta19/UYA/tree/master/Practicas/Introducci%C3%B3n%20a%20Ajax)
 
+7. [Intro Firebase I Informe](https://github.com/LeonardoDorta19/UYA/tree/master/Practicas/Intro%20Firebase%20I%20Informe)
+
+
 ## Teoría
 
 1. [Uso de la web por personas con disfuncionalidad](https://github.com/LeonardoDorta19/UYA/tree/master/Practicas/Uso%20de%20la%20web%20por%20personas%20con%20disfuncionalidad)
