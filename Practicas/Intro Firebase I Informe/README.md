@@ -10,3 +10,6 @@ https://leonardodorta19.github.io/Firebase-website/
 
 - Daniel Arbelo Hernandez
 
+## Capturas de Pantallas
+
+![alt text](Screenshots/empty.png)
