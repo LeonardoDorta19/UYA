@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Banco del tiempo</title>
+    <meta name="author" content="Elvis, Leo, Daniel">
+    <meta name="description" content="La mejor opcion para ahorrar tiempo">
+    <link rel="icon" type="image/x-icon" href="" />
+    <link href="css/materialize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyD6OBpRpIg3t-jd2oG49AsDYmtRI7GIkk8",
+            authDomain: "banco-de-tiempo-be5ac.firebaseapp.com",
+            databaseURL: "https://banco-de-tiempo-be5ac.firebaseio.com",
+            projectId: "banco-de-tiempo-be5ac",
+            storageBucket: "banco-de-tiempo-be5ac.appspot.com",
+            messagingSenderId: "1025949784741",
+            appId: "1:1025949784741:web:26e12871f8c88faa1f8b4c",
+            measurementId: "G-22VDZ6SHTZ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        var database = firebase.database();
+        firebase.analytics();
+    </script>
+
+    <header>
+        <!--    navegacion-->
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Banco de tiempo</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a class="modal-trigger" href="#inicio">Iniciar sesión</a></li>
+                    <li><a class="modal-trigger" href="#registro">Registrarse</a></li>
+                    <li><a href="#">Información</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a class="modal-trigger" href="#inicio">Iniciar sesión</a></li>
+            <li><a class="modal-trigger" href="#registro">Registrarse</a></li>
+            <li><a href="#">Información</a></li>
+        </ul>
+        <!--    fin navegacion-->
+    </header>
+
+    <!--Modal inicio-- >
+                <div id="inicio" class="modal">
+                    <div class="modal-content">
+                        <h3>Inicio de sesión</h3>
+                        <form action="#iniciosesion" method="get">
+
+                            <label>Correo electrónico: </label>
+                            <input type="text" name="correo" alt="El correo del usuario.">
+                                <br>
+
+                                    <label>Contraseña</label>
+                                    <input type="password" name="clave" alt="La contraseña para iniciar sesion.">
+                                        <br>
+
+                </form>
+            </div>
+                                    <div class="modal-footer">
+                                        <div class="row">
+                                            <div class="col s6">
+                                                <p>Olvidaste la contraseña ? <a href="#olvidoclave" name="recuperarcontraseña">pincha aquí</a></p>
+                                            </div>
+                                            <div class="col s6">
+                                                <a type="submit" class="modal-close waves-effect waves-green btn-flat">Iniciar Sesión</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+        </div>
+                                <!-- Modal inicio fin-->
+
+
+    <!-- Modal registro -->
+    <div id="registro" class="modal">
+        <div class="modal-content">
+            <h3>Registro</h3>
+            <p>
+                A continuaci&oacuten se muestra una serie de campos que debe rellenar para completar su registro.
+                Los campos que contengan el símbolo &quot*&quot son obligatorios.
+            </p>
+
+            <form action="#registrar" method="post">
+
+                <p>(*)Nombre:</p>
+                <input id="nombre" type="text" name="nombre" alt="El nombre del usuario.">
+
+                <p>(*)Apellido:</p>
+                <input id="apellido" type="text" name="apellido" alt="El apellido del usuario.">
+
+                <p>(*)Genero:</p>
+
+                <p>
+                    <label>
+                        <input id="generoh" name="group1" class="with-gap" type="radio" checked />
+                        <span>Hombre</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input id="generom" name="group1" class="with-gap" type="radio" />
+                        <span>Mujer</span>
+                    </label>
+                </p>
+
+                <div class="input-field col s12">
+                    <select id="ciudad">
+                        <option value="" disabled selected>(*) Ciudad</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="La Laguna">La Laguna</option>
+                        <option value="La Orotava">La Orotava</option>
+                        <option value="Los Realejos">Los realejos</option>
+                        <option value="Tacoronte">Tacoronte</option>
+                        <option value="Icod de los vinos">Icod de los vinos</option>
+                        <option value="Puerto de la Cruz">Puerto de la Cruz</option>
+                        <option value="Adeje">Adeje</option>
+                    </select>
+                </div>
+
+                <p>(*)Correo electrónico:</p>
+                <input id="correo" type="text" name="correo" alt="El correo del usuario.">
+
+                <p>(*)Contraseña:</p>
+                <input id="password" type="password" name="clave" alt="La contraseña para iniciar sesion.">
+
+                <p>(*)Repite la contraseña:</p>
+                <input id="repassword" type="password" name="re-clave" alt="Comprovacion de la contraseña.">
+
+                <p>En que cirscunstáncias sueles necesitar ayuda:</p>
+                <table>
+                    <tr>
+                        <td><label><input type="checkbox" name="interes" value="Tutorias Universitarias" />
+                                <span>Tutorías universitarias</span></label></td>
+                        <td><label><input type="checkbox" name="interes" value="Transporte"> <span>Transporte</span>
+                            </label></td>
+                        <td><label><input type="checkbox" name="interes" value="Tareas del hogar"> <span>Tareas del
+                                    hogar</span></label></td>
+                    </tr>
+                    <tr>
+                        <td><label><input type="checkbox" name="interes" value="Actividades de trabajo">
+                                <span>Actividades de trabajo</span></label></td>
+                        <td><label><input type="checkbox" name="interes" value="Cuidado de niños"> <span>Cuidado de
+                                    niños</span></label></td>
+                        <td><label><input type="checkbox" name="interes" value="Cuidado de personas mayores">
+                                <span>Cuidado de personas mayores</span></label></td>
+                    </tr>
+                    <tr>
+                        <td><label><input type="checkbox" name="interes" value="Compras"> <span>Compras</span></label>
+                        </td>
+                        <td><label><input type="checkbox" name="interes" value="Planificar eventos"> <span>Planificar
+                                    eventos</span></label></td>
+                        <td><label><input type="checkbox" name="interes" value="Ejercicios físicos"> <span>Ejercicios
+                                    físicos</span></label></td>
+                    </tr>
+                    <tr>
+                        <td><label><input type="checkbox" name="interes" value="Tutorías escolares"> <span>Tutorías
+                                    escolares</span></label></td>
+                        <td><label><input type="checkbox" name="interes" value="Cocina"> <span>Cocina</span></label>
+                        </td>
+                        <td><label><input type="checkbox" name="interes" value="Limpieza"> <span>Limpieza</span></label>
+                        </td>
+                    </tr>
+                </table>
+                <label>Si necesitas agregar información adicional sobre tus necesidades puedes hacerlo aquí:</label>
+                <textarea id="interesad"></textarea>
+
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a type="submit" onclick="registrar()" class="modal-close waves-effect waves-green btn-flat">Registrar</a>
+        </div>
+    </div>
+    <!-- Modal registro fin-->
+
+
+    <div class="blue white-text center">
+        <div class="container">
+            <div class="section">
+                <h2><em>La mejor opción para ahorrar tiempo en tus días ocupados.</em></h2>
+                <p>
+                    Banco de tiempo esta pensado para las personas que necesitan una mano extra en su día a día para
+                    llevar a cabo diversas tareas y ahorrar tiempo.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="deep-purple darken-4 white-text center">
+        <div class="container">
+            <div class="section">
+                <h4>Compras con favores, pagas con favores</h4>
+                <p>
+                    La plataforma es completamente gratuita, sin embargo, para poder contratar un ayudante deberás tener
+                    la suficiente cantidad de Helper Coins que la tarea requeira, los Helper Coins se consiguen ayudando
+                    a otras personas y su cantidad dependerá del tiempo y la dificultad que inviertas en los favores de
+                    los demás usuarios.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="imagenes/portada1.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="deep-purple darken-4 white-text center">
+        <div class="container">
+            <div class="section">
+                <h4>Si ayudas, resaltas !</h4>
+                <p>
+                    Cada vez que completes una tarea, estas se iran acumulando en un marcador que afectara tu nivel como
+                    usuario, además resivirás puntuaciones y referencias de las personas a quien ayudaste, de esta forma
+                    la aplicación no tardara en recomendarte para cumplir mas actividades.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="imagenes/reputacion1.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="deep-purple white-text center">
+        <div class="container">
+            <div class="section">
+                <h4>La ayuda te ayuda</h4>
+                <p>
+                    Mientras subas de nivel como usuario o invites a mas personas a unirse al banco de tiempo, podrás
+                    recibir recompenzas extras:
+                </p>
+                <ul>
+                    <li>Descuento al comprar favores.</li>
+                    <li>Helper coins.</li>
+                    <li>Cupones para tareas especificas gratis.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="imagenes/rewards.png" alt="">
+        </div>
+    </div>
+
+    <!-- Opiniones de usuarios-->
+    <div class="deep-purple white-text center">
+        <div class="container">
+            <div class="section">
+                <h4>Opiniones de usuarios</h4>
+                <p>
+                    Usuarios que han utilizado nuestra página web cuentan sus experiencias.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <ul class="collection">
+                <li class="collection-item avatar">
+                    <img src="imagenes/Martin.jpg" alt="" class="circle">
+                    <span class="title">Martin</span>
+                    <p>Expl&eacute;ndida aplicaci&oacute;n <br>
+                        me ha encantado.
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">account_circle</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <img src="imagenes/retrato-hombre-joven-peque%C3%B1o-rostro-sin-copyright.jpg" alt=""
+                        class="circle">
+                    <span class="title">Isodoro</span>
+                    <p>No me ha parecido muy buena, <br>
+                        es demaciado restrictiva.
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">account_circle</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <img src="imagenes/Laura%20Martinez%20Molera2-2.webp" alt="" class="circle">
+                    <span class="title">Laura</span>
+                    <p>Exelente aplicación <br>
+
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">account_circle</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <img src="imagenes/%C3%ADndice.jpeg" alt="" class="circle">
+                    <span class="title">Fernando</span>
+                    <p>Una aplicaci&oacute;n muy <br>
+                        &uacute;til.
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">account_circle</i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="col s6">
+            <ul class="collection">
+                <li class="collection-item avatar">
+                    <img src="imagenes/antonio.webp" alt="" class="circle">
+                    <span class="title">Antonio</span>
+                    <p>Me ha gustado bastante, <br>
+                        aunque le falta algo de trabajo todav&iacute;a.
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">account_circle</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <img src="imagenes/claudia.jpg" alt="" class="circle">
+                    <span class="title">Ana</span>
+                    <p>Saludos desde SEVILLA ANDALUCIA SUR ESPAÑA.<br>
+                        Mi experiencia personal es GENIAL. Muchas gracias.
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">account_circle</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <img src="imagenes/luis.jpg" alt="" class="circle">
+                    <span class="title">Luis</span>
+                    <p>Una app sencilla y eficaz. <br>
+                        Indispensable en el telefono.
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">account_circle</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <img src="imagenes/richard.jpeg" alt="" class="circle">
+                    <span class="title">Borja</span>
+                    <p>Una basura, quien necesita contabilizar <br>
+                        el tiempo.
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">account_circle</i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Fin de Opiniones de usuarios-->
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Introducción a HTML</h5>
+                    <h6>Universidad de la laguna</h6>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Integrantes</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Elvis Nogueiras</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Leonardo Dorta</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Daniel Arbelo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 ULL - USABILIDAD Y ACCESIBILIDAD
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/materialize.js"></script>
+    <script src="js/registro.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems);
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+</body>
+
+</html>
