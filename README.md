@@ -33,4 +33,5 @@
 
 5. [Criterios A, AA de los principios Comprensible y Robusto](https://github.com/LeonardoDorta19/UYA/tree/master/Practicas/Criterios%20-%20T%C3%A9cnicas%20WCAG%202.1%20(II))
 
+6. [Evaluación automática de la accesibilidad](https://github.com/LeonardoDorta19/UYA/tree/master/Practicas/Evaluaci%C3%B3n%20autom%C3%A1tica%20de%20la%20accesibilidad)
 
