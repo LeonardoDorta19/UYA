@@ -20,6 +20,8 @@
 
 7. [Intro Firebase I Informe](https://github.com/LeonardoDorta19/UYA/tree/master/Practicas/Intro%20Firebase%20I%20Informe)
 
+8. [Ejercicio WAI-ARIA](https://github.com/LeonardoDorta19/UYA/blob/master/Practicas/Ejercicio%20WAI-ARIA/README.md)
+
 
 ## Teoría
 
