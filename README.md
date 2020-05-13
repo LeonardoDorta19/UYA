@@ -22,6 +22,8 @@
 
 8. [Ejercicio WAI-ARIA](https://github.com/LeonardoDorta19/UYA/blob/master/Practicas/Ejercicio%20WAI-ARIA/README.md)
 
+9. [Widgets accesibles](https://github.com/LeonardoDorta19/UYA/tree/master/Practicas/Widgets%20accesibles)
+
 
 ## Teoría
 
