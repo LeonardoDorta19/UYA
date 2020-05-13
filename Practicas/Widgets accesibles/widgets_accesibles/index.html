@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Widgets</title>
+    <meta name="author" content="Elvis, Leo, Daniel">
+    <meta name="description" content="La mejor opcion para ahorrar tiempo">
+    <link href="css/acordeon.css" rel="stylesheet">
+    <link href="css/materialize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <script src="js/materialize.js"></script>
+    <script src="js/acordeon.js"></script>
+    <script> 
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems, options);
+        });
+    </script>
+
+    <header>
+       
+    </header>
+
+    
+
+   
+  <ul class="collapsible ">
+    <li>
+      <button class="collapsible-header Accordion-trigger"
+              aria-expanded="false"
+              aria-controls="sect1"
+              id="accordion1id"><span class="Accordion-title">
+          First
+          <span class="Accordion-icon"></span></span></button>
+      <div class="collapsible-body Accordion-panel" 
+           id="sect1"
+           role="region"
+           aria-labelledby="accordion1id"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <button class="collapsible-header Accordion-trigger"
+              aria-expanded="false"
+              aria-controls="sect2"
+              id="accordion2id"><span class="Accordion-title">
+          Second
+          <span class="Accordion-icon"></span></span></button>
+      <div class="collapsible-body Accordion-panel" 
+           id="sect2"
+           role="region"
+           aria-labelledby="accordion2id"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <button class="collapsible-header Accordion-trigger" 
+              aria-expanded="false"
+              aria-controls="sect3"
+              id="accordion3id"><span class="Accordion-title">
+          Third
+          <span class="Accordion-icon"></span></span></button>
+      <div class="collapsible-body Accordion-panel" 
+           id="sect3"
+            role="region"
+            aria-labelledby="accordion3id"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul>
+   
+
+    <footer>
+        
+    </footer>
+
+
+    
+    
+</body>
+
+</html>

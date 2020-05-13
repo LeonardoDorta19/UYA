@@ -1,0 +1,10 @@
+.breadcrumli{
+	display: inline;
+	position: relative;
+	left: -10px;
+}
+
+.breadcrumbol{
+	position: relative;
+	left: 50px;
+}

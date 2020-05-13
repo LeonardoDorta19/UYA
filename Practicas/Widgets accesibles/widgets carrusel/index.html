@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+<body>
+
+  <div class="carousel carousel-slider center" aria-live="polite">
+    <div class="carousel-fixed-item center" aria-controls="imagenes">
+      <a onclick="img_prev()" aria-label="Imagen anterior" class="btn waves-effect white grey-text darken-text-2">anterior</a>
+      <a onclick="img_sig()" aria-label="Imagen siguiente" class="btn waves-effect white grey-text darken-text-2">siguiente</a>
+    </div>
+    <div id="ce1" class="carousel-item red white-text" href="#one!" aria-hidden="true">
+      <h2>First Panel</h2>
+      <p class="white-text" aria-describedby="Primera imagen, muestra el color rojo.">This is your first panel</p>
+    </div>
+    <div id="ce2" class="carousel-item amber white-text" href="#two!" aria-hidden="false">
+      <h2>Second Panel</h2>
+      <p class="white-text" aria-describedby="Segunda imagen, muestra el color amarillo.">This is your second panel</p>
+    </div>
+    <div id="ce3" class="carousel-item green white-text" href="#three!" aria-hidden="false">
+      <h2>Third Panel</h2>
+      <p class="white-text" aria-describedby="Tercera imagen, muestra el color verde.">This is your third panel</p>
+    </div>
+    <div id="ce4" class="carousel-item blue white-text" href="#four!" aria-hidden="false">
+      <h2>Fourth Panel</h2>
+      <p class="white-text" aria-describedby="Cuarta imagen, muestra el color azul.">This is your fourth panel</p>
+    </div>
+  </div>
+  
+
+    <script src="js/carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
