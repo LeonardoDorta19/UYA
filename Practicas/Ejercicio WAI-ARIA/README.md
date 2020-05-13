@@ -42,21 +42,21 @@ tabindex = "1" para actualizar lo elementos que no recibían el foco
 
 En nuestro caso, uno de estos elementos es el boton de Registrar en el formulario, que al estas sobre el, no recibe el foco
 
-![contentinfo](gif\formularioNoFocus.gif)
+![formularioNoFocus](gif\formularioNoFocus.gif)
 
 ![tabindex0](Screenshots\tabindex0.png)
 
 Ahora, es posible seleccionar el botón
 
-![contentinfo](gif\formularioFocus.gif)
+![formularioFocus](gif\formularioFocus.gif)
 
 Por otro lado, tenemos contenido que no queremos que reciba el foco, en nuestro caso son los iconos
 
-![contentinfo](gif\iconfocus.gif)
+![iconfocus](gif\iconfocus.gif)
 
 con tabindex = "-1" estos elementos ya no reciben el foco
 
-![contentinfo](gif\iconNNofocus.gif)
+![iconNNofocus](gif\iconNNofocus.gif)
 
 #### Aria-required
 
