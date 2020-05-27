@@ -1,0 +1,88 @@
+header{
+	width: 100%;
+}
+ 
+ header h2{
+ 	display: none;
+ }
+
+img{
+	display: block;
+	width: auto;
+	margin: auto;
+}
+
+table{
+		margin: auto;
+	text-align: center;	
+}
+
+tr{
+	width: 50%;
+}
+
+td{
+	display: block;
+	text-align: justify;
+}
+
+header{
+	text-align: center;	
+}
+
+#inicioSesion, #registro{
+	text-align: center;	
+
+}
+
+input{
+	display: block;
+	margin: auto;
+	width: 50%;
+	max-width: 400px;
+}
+
+h1, h2, h3, h4, h5{
+	text-align: center;	
+}
+
+
+
+@media only screen and (min-width: 692px) {
+
+header a{
+	font-size: 18px;
+	display: inline-block;	
+}
+
+
+
+td{
+	display: inline-block;
+}
+
+input{
+	display: inline-block
+	margin: auto;
+	width: 50%;
+}
+
+img{
+	width: 30vw;
+	height: 30vw;
+}
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+*{
+	font-size: 105%;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-size: 250%;
+}
+
+}
+
