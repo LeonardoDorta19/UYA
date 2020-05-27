@@ -24,7 +24,7 @@
 
 9. [Widgets accesibles](https://github.com/LeonardoDorta19/UYA/tree/master/Practicas/Widgets%20accesibles)
 
-10.[Diseño Responsive](https://github.com/LeonardoDorta19/UYA/upload/master/Practicas/Responsive)
+10.[Diseño Responsive](https://github.com/LeonardoDorta19/UYA/tree/master/Practicas/Responsive)
 
 
 ## Teoría
